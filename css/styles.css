@@ -16,7 +16,9 @@ header {
 }
 
 header h1 {
-  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  width: 80vw;
 }
 
 .container {
