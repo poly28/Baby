@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	font-size: 30px;
+	line-height: 100px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	background-color: pink;
+}
+.container {
+	margin: 0 auto;
+	text-align: center;
+
+	#mama {
+		height: 20%;
+		width: 20%;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	#boy {
+		height: 200px;
+		width: 200px;
+	}
+	#girl {
+		height: 200px;
+		width: 200px;
+	}
+	span {
+		color: red;
+		font-weight: bold;
+		font-size: 40px;
+	}
+}

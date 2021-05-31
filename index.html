@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="\css\styles.css" />
+		<title>Baby</title>
+	</head>
+	<body>
+		<header>
+			<h1>堀野家からのおしらせ</h1>
+		</header>
+		<div id="app">
+			<div class="container">
+				<h3>このたび、子供の性別が判明しました！</h3>
+				<h4>お母さんのお腹をタップしてね！</h4>
+				<img
+					v-show="mamaShow"
+					id="mama"
+					src="image\mama.png"
+					@click="boyShowChange"
+				/>
+				<img v-show="boyShow" id="boy" src="image\boy.png" />
+				<img v-show="girlShow" id="girl" src="image\girl.png" />
+				<h2 v-show="flashMessage1">おや、赤ちゃんの様子が・・・？</h2>
+				<h2 v-show="flashMessage2">おめでとう！</h2>
+				<h2 v-show="flashMessage2">
+					赤ちゃんは
+					<span> 女の子 </span>
+					です！
+				</h2>
+
+				<!-- <pre>{{$data}}</pre> -->
+			</div>
+		</div>
+		<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
