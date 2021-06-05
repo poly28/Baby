@@ -46,9 +46,25 @@ header h1 {
   width: 200px;
 }
 
-.container span {
+.container .red {
+  color: red;
+}
+
+.container .red-result {
   color: red;
   font-weight: bold;
   font-size: 40px;
+}
+
+.container .op9 {
+  opacity: 0.9;
+}
+
+.container .op7 {
+  opacity: 0.7;
+}
+
+.container .op5 {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=styles.css.map */

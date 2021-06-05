@@ -12,21 +12,31 @@
 		</header>
 		<div id="app">
 			<div class="container">
-				<h3>このたび、子供の性別が判明しました！</h3>
-				<h4>お母さんのお腹のハートをタップしてね！</h4>
+				<h2>このたび、子供の性別が判明しました！</h2>
+				<h3>
+					お母さんのお腹の
+					<span class="red"> ハート </span>
+					をタップしてね！
+				</h3>
 				<img
 					v-show="mamaShow"
 					id="mama"
 					src="image\mama.png"
 					@click="boyShowChange"
 				/>
-				<img v-show="boyShow" id="boy" src="image\boy.png" />
+				<img
+					v-show="boyShow"
+					id="boy"
+					src="image\boy.png"
+					:class="opacityClass"
+				/>
 				<img v-show="girlShow" id="girl" src="image\girl.png" />
+				<h2 v-show="boyShow">赤ちゃんは、男の子！</h2>
 				<h2 v-show="flashMessage1">おや、赤ちゃんの様子が・・・？</h2>
-				<h2 v-show="flashMessage2">おめでとう！</h2>
+				<h2 v-show="flashMessage2">堀野家の</h2>
 				<h2 v-show="flashMessage2">
 					赤ちゃんは
-					<span> 女の子 </span>
+					<span class="red-result"> 女の子 </span>
 					です！
 				</h2>
 

@@ -39,9 +39,21 @@ header {
 		height: 200px;
 		width: 200px;
 	}
-	span {
+	.red {
+		color: red;
+	}
+	.red-result {
 		color: red;
 		font-weight: bold;
 		font-size: 40px;
+	}
+	.op9 {
+		opacity: 0.9;
+	}
+	.op7 {
+		opacity: 0.7;
+	}
+	.op5 {
+		opacity: 0.5;
 	}
 }
